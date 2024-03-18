@@ -3,8 +3,9 @@ const express = require ( "express" );
 const app = express ();
 const cors =require("cors");
 const dbconnection= require ("./Config/dbconnection");
-const adminRoutes=require('./routes/admin')
-const userRoutes=require('./routes/user');
+const adminRoutes=require('./Routes/AdminRoutes')
+const userRoutes=require('./Routes/UserRoutes');
+
 
 
 dbconnection.connectDB();
